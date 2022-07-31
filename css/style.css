@@ -9,6 +9,9 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.5;
 }
+body.dark {
+  background-color: var(--black);
+}
 .header {
   width: 100%;
   height: 60px;

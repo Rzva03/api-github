@@ -1,5 +1,7 @@
 const FORM = document.getElementById("form");
 const CONTAINER = document.getElementById("container");
+const BODY = document.querySelector("body");
+
 FORM.addEventListener("submit", (e) => {
   e.preventDefault();
   const userName = search.value;
@@ -13,8 +15,8 @@ async function getDataUser(userName) {
       throw new Error(data.status);
     }
     let user = await data.json();
-    console.log(user);
     showUser(user);
+    changeDarkToWhite();
   } catch (error) {
     showError(error.message);
   }
@@ -28,7 +30,6 @@ function showUser(user) {
     followers = user.followers,
     following = user.following,
     blog = validateBlog(user.blog);
-
   let newUser = `<article class="container__card">
                     <section class="card">
                     <img class="card__profile" src="${avatar_url}" alt="${name}" />
@@ -93,4 +94,7 @@ function validateBlog(blog) {
 function showError(error) {
   const errorContent = `<h1>Error ${error}</h1>`;
   CONTAINER.innerHTML = errorContent;
+}
+function changeDarkToWhite() {
+  BODY.classList.toggle("dark");
 }
