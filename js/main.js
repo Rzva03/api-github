@@ -15,3 +15,4 @@ async function getDataUser(username) {
     console.log(error);
   }
 }
+function name(params) {}
