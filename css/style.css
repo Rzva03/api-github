@@ -79,8 +79,8 @@ body {
 .contact {
   width: 100%;
 }
-.contact__city {
-}
+/* .contact__city {
+} */
 .contact__city i,
 .contact__email i,
 .contact__page i {
@@ -94,7 +94,23 @@ body {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
-.contact__email {
+/* .contact__email {
 }
 .contact__page {
+} */
+@media (min-width: 768px) {
+  .header {
+    height: 70px;
+  }
+  .container {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__profile {
+    width: 50%;
+  }
+  .header__search {
+    padding: 1rem 0px 1rem 0px;
+  }
 }
