@@ -5,19 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Api Github</title>
+    <script
+      src="https://kit.fontawesome.com/1934e005fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="container">
-      <article class="container__search">
+    <header class="header">
+      <article class="header__search">
+        <i class="fab fa-github"></i>
         <form class="form">
           <input
             type="text"
             class="form__input"
             placeholder="Nombre de usuario"
           />
-          <input type="submit" value="Buscar" class="form__submit" />
+          <button type="submit" class="form__submit">
+            <i class="fas fa-search"></i>
+          </button>
         </form>
       </article>
+    </header>
+    <section class="container">
       <article class="container__card">
         <section class="card">
           <img class="card__profile" src="profile.jpeg" alt="Nombre Usuario" />
@@ -29,14 +39,22 @@
         </section>
         <section class="followers">
           <section class="followers__follow">
-            <p>323 followers</p>
-            <p>755 following</p>
+            <p>
+              <i class="fas fa-user-friends"></i>
+              <span class="followers__follow--count">323</span> followers -
+              <span class="followers__following--count">755</span> following
+            </p>
           </section>
         </section>
         <section class="contact">
-          <p class="contact__city">Oaxaca, México</p>
-          <p class="contact__email">avictor.zrodriguez@gmail.com</p>
+          <p class="contact__city">
+            <i class="fas fa-map-marker-alt"></i> Oaxaca, México
+          </p>
+          <p class="contact__email">
+            <i class="far fa-envelope"></i> avictor.zrodriguez@gmail.com
+          </p>
           <p class="contact__page">
+            <i class="fas fa-link"></i>
             https://17920368.github.io/Portfolio-TorvikDev
           </p>
         </section>

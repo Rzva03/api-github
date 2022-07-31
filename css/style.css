@@ -1,28 +1,98 @@
-.container__search {
+:root {
+  --black: #24292f;
+  --white: #b9babc;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.5;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--black);
+}
+.header__search {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8rem 0px 0.8rem 0px;
+}
+.header__search i {
+  color: var(--white);
+  font-size: xx-large;
 }
 .form {
+  width: 70%;
 }
 .form__input {
+  display: inline-block;
+  width: 80%;
+  background-color: var(--black);
+  color: var(--white);
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(var(--white), var(--white));
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+.form__input::placeholder {
+  color: var(--white);
 }
 .form__submit {
+  background-color: var(--black);
+  border: 0px;
+  color: var(--white);
 }
-.container__card {
+.form__submit i {
+  font-size: medium;
 }
+.container__card,
 .card {
+  width: 100%;
 }
 .card__profile {
-}
-.card__name {
+  width: 80%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
 }
 .card__bio {
+  font-size: medium;
+  font-weight: lighter;
 }
-.followers {
-}
+.followers,
 .followers__follow {
+  width: 100%;
+}
+.followers__follow--count,
+.followers__following--count {
+  font-weight: bold;
 }
 .contact {
+  width: 100%;
 }
 .contact__city {
+}
+.contact__city i,
+.contact__email i,
+.contact__page i {
+  color: var(--black);
+}
+.contact__city,
+.contact__email,
+.contact__page {
+  line-height: 1;
+  padding: 0.5px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 }
 .contact__email {
 }
