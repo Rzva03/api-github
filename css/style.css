@@ -86,6 +86,10 @@ body {
 .contact__page i {
   color: var(--black);
 }
+.page {
+  color: var(--black);
+  text-decoration: none !important;
+}
 .contact__city,
 .contact__email,
 .contact__page {
