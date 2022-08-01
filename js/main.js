@@ -93,7 +93,7 @@ function validateBlog(blog) {
 }
 function showError(error) {
   console.log(error);
-  location.href = "api-github/errors/404.html";
+  location.href = "../errors/404.html";
 }
 function changeDarkToWhite() {
   BODY.classList.remove("dark");
