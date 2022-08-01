@@ -1,6 +1,7 @@
 :root {
   --black: #24292f;
   --white: #b9babc;
+  --red: #cf222e;
 }
 body {
   padding: 0;
@@ -8,15 +9,23 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.5;
+  transition: all 800ms ease-out;
 }
 body.dark {
   background-color: var(--black);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .header {
   width: 100%;
-  height: 60px;
+  height: auto;
   background-color: var(--black);
 }
+
 .header__search {
   width: 100%;
   display: flex;
@@ -30,12 +39,21 @@ body.dark {
   color: var(--white);
   font-size: xx-large;
 }
+.title {
+  color: var(--white);
+  text-align: center;
+  font-size: x-large;
+  padding: 0;
+  margin: 0;
+}
+
 .form {
   width: 70%;
 }
 .form__input {
   display: inline-block;
   width: 80%;
+  height: 5vh;
   background-color: var(--black);
   color: var(--white);
   border-width: 1px;
@@ -51,6 +69,7 @@ body.dark {
   background-color: var(--black);
   border: 0px;
   color: var(--white);
+  cursor: pointer;
 }
 .form__submit i {
   font-size: medium;
@@ -65,7 +84,7 @@ body.dark {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 .card__bio {
   font-size: medium;
@@ -82,8 +101,6 @@ body.dark {
 .contact {
   width: 100%;
 }
-/* .contact__city {
-} */
 .contact__city i,
 .contact__email i,
 .contact__page i {
@@ -101,13 +118,28 @@ body.dark {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
-/* .contact__email {
+.error {
+  background-color: red;
+  padding: 0.5rem;
+  width: 200px;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 800ms ease-out;
 }
-.contact__page {
-} */
 @media (min-width: 768px) {
+  body.dark {
+    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   .header {
-    height: 70px;
+    height: auto;
   }
   .container {
     width: 30%;

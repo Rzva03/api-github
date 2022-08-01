@@ -92,9 +92,9 @@ function validateBlog(blog) {
   return blog;
 }
 function showError(error) {
-  const errorContent = `<h1>Error ${error}</h1>`;
-  CONTAINER.innerHTML = errorContent;
+  console.log(error);
+  location.href = "/errors/404.html";
 }
 function changeDarkToWhite() {
-  BODY.classList.toggle("dark");
+  BODY.classList.remove("dark");
 }
