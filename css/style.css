@@ -76,7 +76,9 @@ body.dark {
 }
 .container__card,
 .card {
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card__profile {
   width: 80%;
@@ -94,12 +96,19 @@ body.dark {
 .followers__follow {
   width: 100%;
 }
+.followers__follow {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .followers__follow--count,
 .followers__following--count {
   font-weight: bold;
 }
 .contact {
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact__city i,
 .contact__email i,
