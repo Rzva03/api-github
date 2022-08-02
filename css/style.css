@@ -91,6 +91,7 @@ body.dark {
 .card__bio {
   font-size: medium;
   font-weight: lighter;
+  color: var(--black);
 }
 .followers,
 .followers__follow {
